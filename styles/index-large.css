@@ -1,0 +1,79 @@
+/* Features - row direction */
+.features {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feature-card {
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+/* About - row with card left and image right */
+.about {
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Contact Form - inputs in a row */
+.contact-form {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-form input {
+  margin-right: 0.5rem;
+  flex: 1;
+}
+
+.contact-form button {
+  flex: none;
+}
+
+/* Hero Buttons - row */
+.hero-buttons {
+  flex-direction: row;
+}
+
+/* Hero Text */
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Navigation - horizontal layout */
+.nav-links {
+  display: flex !important; /* show links horizontally */
+  flex-direction: row;
+  position: static;
+  width: auto;
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.nav-links a {
+  margin-left: 0.5rem;
+}
+
+.hamburger {
+  display: none; /* hide hamburger on larger screens */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 0.25rem;
+  position: relative;
+}
+
+/* Separators for the design */
+.nav-links a:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.25rem;
+  color: #666; /* Optional: slightly lighter color for the pipe */
+}
