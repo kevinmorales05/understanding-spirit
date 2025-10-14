@@ -1,12 +1,13 @@
-/* Features - row direction */
-.features {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
+/* Container max width */
 .features, .about, .quote, .contact {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Features - row layout */
+.features {
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .feature-card {
@@ -14,14 +15,14 @@
   margin: 0 0.5rem;
 }
 
-/* About - row with card left and image right */
+/* About - card left, image right */
 .about {
   flex-direction: row;
   align-items: center;
   gap: 2rem;
 }
 
-/* Contact Form - inputs in a row */
+/* Contact form - row inputs */
 .contact-form {
   flex-direction: row;
   justify-content: center;
@@ -35,13 +36,13 @@
 .contact-form button {
   flex: none;
 }
-
-/* Hero Buttons - row */
+/* Hero Section - large screens */
+/* Hero buttons */
 .hero-buttons {
   flex-direction: row;
 }
 
-/* Hero Text */
+/* Hero text larger */
 .hero h1 {
   font-size: 2.5rem;
 }
@@ -50,9 +51,31 @@
   font-size: 1.2rem;
 }
 
-/* Navigation - horizontal layout */
+.hero {
+  text-align: left; /* align text to left on large screens */
+  padding: 4rem 2rem;
+  min-height: 80vh;
+}
+
+.hero-content {
+  max-width: 600px;
+  align-self: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-buttons {
+  flex-direction: row; /* buttons side by side */
+  gap: 1rem;
+}
+
+.hero-buttons .btn {
+  width: auto; /* fit content */
+}
+
+/* Navbar - horizontal links */
 .nav-links {
-  display: flex !important; /* show links horizontally */
+  display: flex !important;
   flex-direction: row;
   position: static;
   width: auto;
@@ -63,22 +86,19 @@
 
 .nav-links a {
   margin-left: 0.5rem;
-}
-
-.hamburger {
-  display: none; /* hide hamburger on larger screens */
-}
-
-.nav-links a {
+  color: var(--color-white);
   text-decoration: none;
-  color: #333;
-  margin: 0 0.25rem;
   position: relative;
 }
 
-/* Separators for the design */
+/* Separators between links */
 .nav-links a:not(:last-child)::after {
   content: "|";
   margin-left: 0.25rem;
-  color: #666; /* Optional: slightly lighter color for the pipe */
+  color: var(--color-white);
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
 }
