@@ -4,6 +4,11 @@
   justify-content: space-between;
 }
 
+.features, .about, .quote, .contact {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .feature-card {
   flex: 1;
   margin: 0 0.5rem;
