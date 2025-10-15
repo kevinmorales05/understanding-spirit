@@ -12,5 +12,38 @@ const currentYear = new Date().getFullYear();
 document.querySelector("#year").textContent = currentYear;
 
 
-const lastModified = document.lastModified;
-document.querySelector("#lastModified").textContent = lastModified;
+
+
+// Handle form submission
+const form = document.getElementById("subscription-form");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("close-modal");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // Prevent default form action
+console.log('this event is working');
+  // Simulate sending subscription data
+  const name = form.name.value.trim();
+  const email = form.email.value.trim();
+
+  if (name && email) {
+    // Show confirmation modal
+    modal.classList.remove("hidden");
+    modal.classList.add("visible");
+    form.reset();
+  }
+});
+
+// Close modal
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("visible");
+  modal.classList.add("hidden");
+});
+
+// Optional: close modal by clicking outside of it
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("visible");
+    modal.classList.add("hidden");
+  }
+});

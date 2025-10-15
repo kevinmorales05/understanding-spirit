@@ -55,7 +55,7 @@
     <section id="contact" class="contact">
       <h2>Get in Touch</h2>
       <p>Subscribe to receive guidance and insights directly to your inbox.</p>
-      <form action="get" class="contact-form">
+      <form  id="subscription-form"  class="contact-form">
         <input type="text" name="name" placeholder="Your Name" />
         <input type="email" name="email" placeholder="Your Email" />
         <button type="submit">Subscribe</button>
@@ -63,10 +63,22 @@
     </section>
     </section>
 
+     <!-- Confirmation Modal -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Thank You for Subscribing!</h3>
+        <p>
+          You’ll now receive weekly insights to strengthen your faith and
+          spiritual connection.
+        </p>
+        <button id="close-modal" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-links">
-        <a href="/">Home</a> | <a href="#about">About</a> |
+        <a href="/">Home</a> | <a href="/#about">About</a> |
         <a href="/testimonies.html">Testimonials</a> |
         <a href="/form.html">Contact</a>
       </div>
