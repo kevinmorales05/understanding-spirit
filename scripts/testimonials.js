@@ -25,6 +25,7 @@ testimonials.forEach(testimonial => {
     testimonialDiv.className = 'testimonial';
 
     let img = document.createElement('img');
+    img.loading = 'lazy';
     img.src = testimonial.imageUrl;
     img.alt = testimonial.alter;
 
