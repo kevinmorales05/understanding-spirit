@@ -48,6 +48,12 @@
   -webkit-text-stroke: 3px var(--color-white);
 }
 
+.hero::before {
+  
+  background-image: url('../images/spiritualGuidance.webp'); /* replace with your image */
+  
+}
+
 .hero p {
   font-size: 1.2rem;
 }

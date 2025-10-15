@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Show menu when active */
 .nav-links.active {
   display: flex;
+  z-index: 2;
 }
 
 /* Hero Section */
@@ -95,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('../images/your-image.jpg'); /* replace with your image */
+  background-image: url('../images/heroInspiration.jpg'); /* replace with your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
