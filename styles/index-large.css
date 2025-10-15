@@ -45,6 +45,7 @@
 /* Hero text larger */
 .hero h1 {
   font-size: 2.5rem;
+  -webkit-text-stroke: 3px var(--color-white);
 }
 
 .hero p {
@@ -101,4 +102,51 @@
 /* Hide hamburger on desktop */
 .hamburger {
   display: none;
+}
+
+/* Testimonial large screen */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.testimonial {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: var(--color-white);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect for interactivity */
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--color-primary);
+}
+
+.quote {
+  font-style: italic;
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.author {
+  font-weight: bold;
+  color: var(--color-text);
+  font-family: var(--font-heading);
 }
