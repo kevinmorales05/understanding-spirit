@@ -24,7 +24,7 @@
 
 /* Contact form - row inputs */
 .contact-form {
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -35,6 +35,7 @@
 
 .contact-form button {
   flex: none;
+  flex-direction: column;
 }
 /* Hero Section - large screens */
 /* Hero buttons */

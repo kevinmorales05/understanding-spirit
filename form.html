@@ -52,18 +52,44 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
       <!-- Contact Form Section -->
-    <section id="contact" class="contact">
-      <h2>Get in Touch</h2>
-      <p>Subscribe to receive guidance and insights directly to your inbox.</p>
-      <form  id="subscription-form"  class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="email" name="email" placeholder="Your Email" />
-        <button type="submit">Subscribe</button>
-      </form>
-    </section>
+      <section id="contact" class="contact">
+        <h2>Subscribe Now</h2>
+        <p>
+          Subscribe to receive guidance and insights directly to your inbox.
+        </p>
+        <form id="subscription-form" class="contact-form">
+          <label for="name">Full name</label>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Your Email" required />
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" required />
+          <fieldset>
+            <legend>Church Affiliation</legend>
+            <label>
+              <input type="radio" name="affiliation" value="member" required />
+              Member of the Church
+            </label>
+            <label>
+              <input type="radio" name="affiliation" value="non-member" />
+              Non-Member
+            </label>
+            <label>
+              <input type="radio" name="affiliation" value="researching" />
+              Researching the Church
+            </label>
+            <label>
+              <input type="radio" name="affiliation" value="other" />
+              Other Religion
+            </label>
+          </fieldset>
+
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
     </section>
 
-     <!-- Confirmation Modal -->
+    <!-- Confirmation Modal -->
     <div id="modal" class="modal hidden">
       <div class="modal-content">
         <h3>Thank You for Subscribing!</h3>
