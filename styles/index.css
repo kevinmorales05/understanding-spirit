@@ -113,9 +113,9 @@ h1, h2, h3, h4, h5, h6 {
 .hero h1 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: var(--color-accent); /* Keep original color */
-  -webkit-text-stroke: 2px var(--color-white); /* Thin white outline around text */
-  paint-order: stroke fill; /* Ensures the stroke sits outside the fill */
+  color: var(--color-accent); 
+  -webkit-text-stroke: 2px var(--color-white); 
+  paint-order: stroke fill; 
 }
 
 
